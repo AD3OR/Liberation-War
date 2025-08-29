@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Museum Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2 class="brand-title">Digital Museum</h2>
+                <span class="brand-subtitle">Archive & Collections</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#collections" class="nav-link">Collections</a></li>
+                <li class="nav-item"><a href="#exhibitions" class="nav-link">Exhibitions</a></li>
+                <li class="nav-item"><a href="#archive" class="nav-link">Archive</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Digital Heritage</h1>
+                <p class="hero-subtitle">Explore our extensive collection of digitally preserved artifacts, artworks, and cultural treasures from around the world.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Explore Collections</button>
+                    <button class="btn btn-secondary">Virtual Tour</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder hero-placeholder">
+                    <span class="placeholder-text">Featured Exhibition Image</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3>12,000+</h3>
+                <p>Digital Artifacts</p>
+            </div>
+            <div class="stat-item">
+                <h3>250+</h3>
+                <p>Collections</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Virtual Exhibitions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <h2>Search the Archive</h2>
+                <div class="search-box">
+                    <input type="text" placeholder="Search artifacts, collections, or exhibitions..." class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="search-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="artifacts">Artifacts</button>
+                    <button class="filter-btn" data-filter="paintings">Paintings</button>
+                    <button class="filter-btn" data-filter="sculptures">Sculptures</button>
+                    <button class="filter-btn" data-filter="manuscripts">Manuscripts</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-collections" id="collections">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="image-placeholder">
+                        <span class="placeholder-text">Collection Image</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ancient Civilizations</h3>
+                        <p class="card-description">[Description text will be added here]</p>
+                        <span class="item-count">1,245 items</span>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="image-placeholder">
+                        <span class="placeholder-text">Collection Image</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Renaissance Art</h3>
+                        <p class="card-description">[Description text will be added here]</p>
+                        <span class="item-count">892 items</span>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="image-placeholder">
+                        <span class="placeholder-text">Collection Image</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Modern Sculpture</h3>
+                        <p class="card-description">[Description text will be added here]</p>
+                        <span class="item-count">567 items</span>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="image-placeholder">
+                        <span class="placeholder-text">Collection Image</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Historical Manuscripts</h3>
+                        <p class="card-description">[Description text will be added here]</p>
+                        <span class="item-count">1,089 items</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artifacts -->
+    <section class="featured-artifacts">
+        <div class="container">
+            <h2 class="section-title">Featured Artifacts</h2>
+            <div class="artifacts-grid">
+                <div class="artifact-card">
+                    <div class="image-placeholder artifact-placeholder">
+                        <span class="placeholder-text">Artifact Image</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h4>Artifact Title</h4>
+                        <p class="artifact-period">Period: [To be added]</p>
+                        <p class="artifact-origin">Origin: [To be added]</p>
+                        <p class="artifact-description">[Detailed description will be added here]</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="artifact-card">
+                    <div class="image-placeholder artifact-placeholder">
+                        <span class="placeholder-text">Artifact Image</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h4>Artifact Title</h4>
+                        <p class="artifact-period">Period: [To be added]</p>
+                        <p class="artifact-origin">Origin: [To be added]</p>
+                        <p class="artifact-description">[Detailed description will be added here]</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="artifact-card">
+                    <div class="image-placeholder artifact-placeholder">
+                        <span class="placeholder-text">Artifact Image</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h4>Artifact Title</h4>
+                        <p class="artifact-period">Period: [To be added]</p>
+                        <p class="artifact-origin">Origin: [To be added]</p>
+                        <p class="artifact-description">[Detailed description will be added here]</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="artifact-card">
+                    <div class="image-placeholder artifact-placeholder">
+                        <span class="placeholder-text">Artifact Image</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h4>Artifact Title</h4>
+                        <p class="artifact-period">Period: [To be added]</p>
+                        <p class="artifact-origin">Origin: [To be added]</p>
+                        <p class="artifact-description">[Detailed description will be added here]</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Exhibitions -->
+    <section class="current-exhibitions" id="exhibitions">
+        <div class="container">
+            <h2 class="section-title">Current Virtual Exhibitions</h2>
+            <div class="exhibitions-grid">
+                <div class="exhibition-card large">
+                    <div class="image-placeholder exhibition-placeholder">
+                        <span class="placeholder-text">Main Exhibition Image</span>
+                    </div>
+                    <div class="exhibition-content">
+                        <span class="exhibition-badge">Featured</span>
+                        <h3>Exhibition Title</h3>
+                        <p class="exhibition-dates">Dates: [To be added]</p>
+                        <p class="exhibition-description">[Exhibition description will be added here]</p>
+                        <button class="btn btn-primary">Enter Exhibition</button>
+                    </div>
+                </div>
+                <div class="exhibition-card">
+                    <div class="image-placeholder">
+                        <span class="placeholder-text">Exhibition Image</span>
+                    </div>
+                    <div class="exhibition-content">
+                        <h4>Exhibition Title</h4>
+                        <p class="exhibition-dates">Dates: [To be added]</p>
+                        <p class="exhibition-description">[Description text]</p>
+                        <button class="view-btn">View Exhibition</button>
+                    </div>
+                </div>
+                <div class="exhibition-card">
+                    <div class="image-placeholder">
+                        <span class="placeholder-text">Exhibition Image</span>
+                    </div>
+                    <div class="exhibition-content">
+                        <h4>Exhibition Title</h4>
+                        <p class="exhibition-dates">Dates: [To be added]</p>
+                        <p class="exhibition-description">[Description text]</p>
+                        <button class="view-btn">View Exhibition</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section class="archive-section" id="archive">
+        <div class="container">
+            <h2 class="section-title">Browse Archive</h2>
+            <div class="archive-categories">
+                <div class="category-card">
+                    <div class="image-placeholder category-placeholder">
+                        <span class="placeholder-text">Category Image</span>
+                    </div>
+                    <h4>Paintings & Drawings</h4>
+                    <p>[Category description]</p>
+                    <span class="item-count">2,456 items</span>
+                </div>
+                <div class="category-card">
+                    <div class="image-placeholder category-placeholder">
+                        <span class="placeholder-text">Category Image</span>
+                    </div>
+                    <h4>Sculptures & 3D Art</h4>
+                    <p>[Category description]</p>
+                    <span class="item-count">1,234 items</span>
+                </div>
+                <div class="category-card">
+                    <div class="image-placeholder category-placeholder">
+                        <span class="placeholder-text">Category Image</span>
+                    </div>
+                    <h4>Historical Documents</h4>
+                    <p>[Category description]</p>
+                    <span class="item-count">3,789 items</span>
+                </div>
+                <div class="category-card">
+                    <div class="image-placeholder category-placeholder">
+                        <span class="placeholder-text">Category Image</span>
+                    </div>
+                    <h4>Archaeological Finds</h4>
+                    <p>[Category description]</p>
+                    <span class="item-count">987 items</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to receive updates about new exhibitions, collections, and digital discoveries.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Digital Museum</h4>
+                    <p>[Museum description and mission statement will be added here]</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                        <li><a href="#archive">Archive</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Contact</h5>
+                    <p>Email: [contact@digitalmuseum.org]</p>
+                    <p>Phone: [+1 (555) 123-4567]</p>
+                    <p>Address: [Museum Address]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Digital Museum Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
