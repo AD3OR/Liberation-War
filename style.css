@@ -462,6 +462,8 @@ body {
     cursor: pointer;
     transition: var(--transition);
     font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .view-btn:hover {
@@ -703,6 +705,7 @@ body {
 
 .social-links {
     display: flex;
+    flex-wrap: wrap; 
     gap: 1rem;
     margin-top: 1rem;
 }
