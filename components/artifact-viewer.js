@@ -9,6 +9,7 @@ function initImageControls() {
     const zoomBtn = document.querySelector('.zoom-btn');
     const fullscreenBtn = document.querySelector('.fullscreen-btn');
     const rotateBtn = document.querySelector('.rotate-btn');
+    const view3DBtn = document.querySelector('.view-3d-btn');
     const mainImage = document.querySelector('.main-artifact-placeholder');
     
     let rotation = 0;
@@ -45,6 +46,17 @@ function initImageControls() {
         fullscreenBtn.addEventListener('click', () => {
             console.log('Fullscreen mode would be implemented here');
             // Future implementation for fullscreen image viewing
+        });
+    }
+
+    // 3D viewer functionality is handled by the 3d-viewer.js module
+    if (view3DBtn) {
+        view3DBtn.addEventListener('mouseenter', () => {
+            view3DBtn.style.transform = 'translateY(-2px) scale(1.05)';
+        });
+        
+        view3DBtn.addEventListener('mouseleave', () => {
+            view3DBtn.style.transform = 'translateY(0) scale(1)';
         });
     }
 

@@ -54,11 +54,12 @@
         <div class="container">
             <div class="artifact-hero-grid">
                 <div class="artifact-main-image">
-                    <img style = "width: 100%; height: auto; display: block;" src = "/images/15.jpg" alt = "Exhibition Image 15">
+                    <img style = "width: 100%; height: auto; display: block;" src = "/images/R.jpg" alt = "Exhibition Image 15">
                     <div class="image-controls">
                         <button class="zoom-btn">🔍 Zoom</button>
                         <button class="fullscreen-btn">⛶ Fullscreen</button>
                         <button class="rotate-btn">↻ Rotate</button>
+                        <button class="view-3d-btn">🎯 View 3D Model</button>
                     </div>
                 </div>
                 <div class="artifact-details">
@@ -182,42 +183,54 @@
             <h2 class="section-title">Related Images & Documentation</h2>
             <div class="images-grid">
                 <div class="gallery-item">
-                    <img style = "width: 100%; height: auto; display: block;" src = "/images/16.jpg" alt = "Exhibition Image 16">
+                    <div class="image-placeholder gallery-placeholder">
+                        <span class="placeholder-text">Related Image 1</span>
+                    </div>
                     <div class="gallery-caption">
                         <h4>[Image Title]</h4>
                         <p>[Image description and context]</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img style = "width: 100%; height: auto; display: block;" src = "/images/17.jpg" alt = "Exhibition Image 17">
+                    <div class="image-placeholder gallery-placeholder">
+                        <span class="placeholder-text">Related Image 2</span>
+                    </div>
                     <div class="gallery-caption">
                         <h4>[Image Title]</h4>
                         <p>[Image description and context]</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img style = "width: 100%; height: auto; display: block;" src = "/images/18.png" alt = "Exhibition Image 15">
+                    <div class="image-placeholder gallery-placeholder">
+                        <span class="placeholder-text">Related Image 3</span>
+                    </div>
                     <div class="gallery-caption">
                         <h4>[Image Title]</h4>
                         <p>[Image description and context]</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img style = "width: 100%; height: auto; display: block;" src = "/images/19.png" alt = "Exhibition Image 19">
+                    <div class="image-placeholder gallery-placeholder">
+                        <span class="placeholder-text">Related Image 4</span>
+                    </div>
                     <div class="gallery-caption">
                         <h4>[Image Title]</h4>
                         <p>[Image description and context]</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img style = "width: 100%; height: auto; display: block;" src = "/images/20.jpg" alt = "Exhibition Image 20">
+                    <div class="image-placeholder gallery-placeholder">
+                        <span class="placeholder-text">Comparative Study</span>
+                    </div>
                     <div class="gallery-caption">
                         <h4>[Comparative Title]</h4>
                         <p>[Comparative analysis description]</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img style = "width: 100%; height: auto; display: block;" src = "/images/21.jpg" alt = "Exhibition Image 21">
+                    <div class="image-placeholder gallery-placeholder">
+                        <span class="placeholder-text">Historical Context</span>
+                    </div>
                     <div class="gallery-caption">
                         <h4>[Context Title]</h4>
                         <p>[Historical context description]</p>
@@ -254,13 +267,46 @@
         </div>
     </section>
 
+    <!-- 3D Model Viewer Modal -->
+    <div class="model-viewer-modal" id="modelViewerModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>3D Model Viewer</h3>
+                <button class="modal-close" id="closeModal">✕</button>
+            </div>
+            <div class="model-viewer-container">
+                <canvas id="threejs-canvas"></canvas>
+                <div class="model-controls">
+                    <div class="control-group">
+                        <label>Rotation Speed</label>
+                        <input type="range" id="rotationSpeed" min="0" max="2" step="0.1" value="1" class="control-slider">
+                    </div>
+                    <div class="control-group">
+                        <label>Zoom</label>
+                        <input type="range" id="zoomControl" min="0.5" max="3" step="0.1" value="1" class="control-slider">
+                    </div>
+                    <div class="control-buttons">
+                        <button class="control-btn" id="resetView">Reset View</button>
+                        <button class="control-btn" id="autoRotate">Auto Rotate</button>
+                    </div>
+                </div>
+                <div class="model-info">
+                    <p class="model-instructions">
+                        <strong>Controls:</strong> Drag to rotate • Scroll to zoom • Right-click and drag to pan
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Liberation War Museum</h4>
-                    <p>A heritage of Bangladesh</p>
+                    <h4>Digital Museum</h4>
+                    <p>[Museum description and mission statement will be added here]</p>
                     <div class="social-links">
                         <a href="#" class="social-link">Facebook</a>
                         <a href="#" class="social-link">Twitter</a>
@@ -288,18 +334,23 @@
                 </div>
                 <div class="footer-section">
                     <h5>Contact</h5>
-                    <p>Email: info@liberationwarmuseum.org</p>
-                    <p>Phone: 09611677223</p>
-                    <p>Address: F11/A & F11/B Sher-E-Bangla Nagar Civic Centre, Agargaon, Dhaka</p>
+                    <p>Email: [contact@digitalmuseum.org]</p>
+                    <p>Phone: [+1 (555) 123-4567]</p>
+                    <p>Address: [Museum Address]</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Liberation War Museum Archive. All rights reserved.</p>
+                <p>&copy; 2025 Digital Museum Archive. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script>
+        window.glbModelPath = "/glbs/R3D.glb";
+    </script>
+
     <script type="module" src="main.js"></script>
     <script type="module" src="components/artifact-viewer.js"></script>
+    <script type="module" src="components/3d-viewer.js"></script>
 </body>
 </html>

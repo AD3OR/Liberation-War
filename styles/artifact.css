@@ -87,9 +87,28 @@
 
 .zoom-btn:hover,
 .fullscreen-btn:hover,
-.rotate-btn:hover {
+.rotate-btn:hover,
+.view-3d-btn:hover {
     background: var(--primary-color);
     color: var(--white);
+    transform: translateY(-2px);
+}
+
+.view-3d-btn {
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.view-3d-btn:hover {
+    background: #f4c542;
+    border-color: #f4c542;
     transform: translateY(-2px);
 }
 
@@ -691,4 +710,285 @@
     cursor: pointer;
     background: none;
     border: none;
+}
+
+/* 3D Model Viewer Modal */
+.model-viewer-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.model-viewer-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    max-width: 1400px;
+    max-height: 900px;
+    margin: auto;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.modal-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.model-viewer-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#threejs-canvas {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    cursor: grab;
+}
+
+#threejs-canvas:active {
+    cursor: grabbing;
+}
+
+.model-controls {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    min-width: 250px;
+}
+
+.control-group {
+    margin-bottom: 1rem;
+}
+
+.control-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.control-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #e0e0e0;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.control-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.control-slider::-webkit-slider-thumb:hover {
+    background: #f4c542;
+    transform: scale(1.1);
+}
+
+.control-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.control-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.control-btn {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.control-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-1px);
+}
+
+.control-btn.active {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.model-info {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.model-instructions {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.model-instructions strong {
+    color: var(--primary-color);
+}
+
+/* Loading indicator for 3D model */
+.model-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e0e0e0;
+    border-top: 4px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design for 3D viewer */
+@media (max-width: 1024px) {
+    .model-controls {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 1rem;
+        min-width: auto;
+    }
+    
+    .model-viewer-container {
+        flex-direction: column;
+    }
+    
+    #threejs-canvas {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 98%;
+        height: 98%;
+        margin: 1%;
+    }
+    
+    .modal-header {
+        padding: 1rem;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.25rem;
+    }
+    
+    .model-controls {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .control-buttons {
+        flex-direction: column;
+    }
+    
+    .model-info {
+        margin: 0.5rem;
+    }
+    
+    #threejs-canvas {
+        height: 50vh;
+    }
 }
