@@ -1,0 +1,597 @@
+/* Virtual Tour Page Specific Styles */
+
+/* Virtual Tour Hero */
+.virtual-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.virtual-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease;
+}
+
+.virtual-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, var(--white), var(--accent-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.virtual-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Virtual Tour Section */
+.virtual-tour-section {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.tour-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tour-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.tour-header h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tour-header p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.tour-viewer {
+    position: relative;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-hover);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.viewer-frame {
+    position: relative;
+    width: 100%;
+    min-height: 750px;
+    background: var(--bg-light);
+}
+
+.viewer-frame iframe {
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.tour-controls {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    z-index: 100;
+}
+
+.control-item {
+    position: relative;
+}
+
+.control-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 70px;
+}
+
+.control-button:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.control-icon {
+    font-size: 1.25rem;
+}
+
+.control-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Tour Guide Section */
+.tour-guide {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.guide-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.guide-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.guide-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.guide-list {
+    list-style: none;
+    text-align: left;
+}
+
+.guide-list li {
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.guide-list li::before {
+    content: '•';
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Tour Highlights */
+.tour-highlights {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.highlight-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.highlight-placeholder {
+    height: 200px;
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+}
+
+.highlight-content {
+    padding: 1.5rem;
+}
+
+.highlight-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.highlight-description {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.highlight-btn {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.highlight-btn:hover {
+    background: #f4c542;
+    transform: translateY(-2px);
+}
+
+/* Help Modal */
+.help-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.help-modal.active {
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-content {
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.help-body {
+    padding: 2rem;
+}
+
+.help-section {
+    margin-bottom: 2rem;
+}
+
+.help-section:last-child {
+    margin-bottom: 0;
+}
+
+.help-section h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.help-section p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.help-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.help-control-item {
+    padding: 0.75rem;
+    background: var(--bg-light);
+    border-radius: 6px;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+}
+
+.help-control-item strong {
+    color: var(--primary-color);
+}
+
+.help-features {
+    list-style: none;
+    padding: 0;
+}
+
+.help-features li {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.help-features li::before {
+    content: '✓';
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Loading State */
+.tour-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--primary-color);
+    z-index: 10;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #e0e0e0;
+    border-top: 4px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .virtual-title {
+        font-size: 3rem;
+    }
+    
+    .tour-features {
+        gap: 2rem;
+    }
+    
+    .tour-controls {
+        position: relative;
+        top: auto;
+        right: auto;
+        justify-content: center;
+        margin-top: 1rem;
+        background: var(--bg-light);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+    }
+    
+    .viewer-frame {
+        min-height: 600px;
+    }
+    
+    .viewer-frame iframe {
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .virtual-hero {
+        padding: 100px 0 40px;
+    }
+    
+    .virtual-title {
+        font-size: 2.5rem;
+    }
+    
+    .virtual-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .tour-features {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .feature-item {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .viewer-frame {
+        min-height: 500px;
+    }
+    
+    .viewer-frame iframe {
+        height: 500px;
+    }
+    
+    .tour-controls {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .control-button {
+        min-width: 60px;
+        padding: 0.5rem;
+    }
+    
+    .control-label {
+        font-size: 0.625rem;
+    }
+    
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .help-content {
+        width: 95%;
+        margin: 2.5%;
+    }
+    
+    .help-body {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .virtual-title {
+        font-size: 2rem;
+    }
+    
+    .viewer-frame {
+        min-height: 400px;
+    }
+    
+    .viewer-frame iframe {
+        height: 400px;
+    }
+    
+    .tour-controls {
+        position: relative;
+        justify-content: space-around;
+        padding: 0.75rem;
+    }
+    
+    .control-button {
+        min-width: 50px;
+        padding: 0.5rem 0.25rem;
+    }
+    
+    .control-icon {
+        font-size: 1rem;
+    }
+    
+    .control-label {
+        font-size: 0.5rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .virtual-hero-content {
+        animation: none;
+    }
+    
+    .highlight-card:hover,
+    .guide-card:hover {
+        transform: none;
+    }
+    
+    .control-button:hover {
+        transform: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .control-button {
+        border-width: 3px;
+    }
+    
+    .viewer-frame {
+        border: 2px solid var(--primary-color);
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .tour-controls,
+    .footer {
+        display: none;
+    }
+    
+    .virtual-hero {
+        background: var(--white);
+        color: var(--primary-color);
+        padding: 2rem 0;
+    }
+    
+    .viewer-frame {
+        border: 2px solid var(--primary-color);
+        height: 400px;
+    }
+    
+    .viewer-frame iframe {
+        display: none;
+    }
+    
+    .viewer-frame::after {
+        content: "Virtual tour available online at: " attr(data-url);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: var(--text-dark);
+        font-weight: 500;
+    }
+}

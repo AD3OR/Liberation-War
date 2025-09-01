@@ -1,607 +1,305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <!-- Page Title Here -->
-    <title>Liberation War Museum</title>
-
-    <!-- Meta -->
-    <meta name="author" content="Asif">
-    <link rel="icon" type="image/x-icon" href="https://www.liberationwarmuseumbd.org/front/lwm/img/site-logo.png">
-    <!-- Disable screen scaling-->
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-    <!-- Web fonts and Web Icons -->
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/fonts/opensans/stylesheet.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/fonts/bebas/stylesheet.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/fonts/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/js/bootstrap-datepicker.min.js"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS style -->
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/pageloader.css">
-
-    <!-- Uncomment below to load individualy vendor CSS -->
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/menu.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/showcase.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/js/vegas/vegas.min.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/js/vendor/swiper.min.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/js/vendor/jquery.fullpage.min.css">
-
-    <!-- Main CSS files -->
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/main.css">
-
-    <!-- add alt layout here -->
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/style-default.css">
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/vendor/modernizr-2.7.1.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://www.liberationwarmuseumbd.org/front/lwm/css/responsive.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKEGY3HWXQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LKEGY3HWXQ');
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour - Digital Museum Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/virtual-tour.css">
 </head>
-
-<body class="body-page">
-    <div class="page-loader" id="page-loader">
-        <div>
-            <div>
-                <img class="light-logo" src="https://www.liberationwarmuseumbd.org/front/lwm/img/large-logo.png"
-                    alt="Logo">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2 class="brand-title">Digital Museum</h2>
+                    <span class="brand-subtitle">Archive & Collections</span>
+                </a>
             </div>
-            <!--<div class="icon ion-spin"></div>-->
-            <!--<p>loading</p>-->
-        </div>
-    </div>
-
-    <!-- BEGIN OF site header Menu -->
-    <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
-
-        <!-- Demo -->
-        <input type='checkbox' id='toggle' style='display:none;' />
-        <label class='toggle-btn toggle-btn__cross' for='toggle'>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </label>
-        <nav id="navbarMenu">
-
-            <ul class="list list-unstyled list-product-nav">
-                <li> <a href="https://www.liberationwarmuseumbd.org" class="menu-excep">Home</a>
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org/page/our-museum" class="list-product-cat">About
-                        Museum<i class="awesome fa fa-chevron-down pull-right" aria-hidden="true"></i></a>
-                    <ul class="list list-unstyled list-product-subnav">
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/board-of-trustees">Founder Board of
-                                Trustees</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/our-museum">About Us</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/mission-statement">Mission Statement</a>
-                        </li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/accreditation-and-affiliations">Accreditation
-                                & Affiliations</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/liberation-war-museum-activities">Early
-                                Initiatives</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/new-museum">New Museum</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/annual-speech">Annual Speech</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/publications">Publications</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/projects-and-programs">Projects and
-                                Programs</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/reachout-program">Reachout Program</a>
-                        </li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/outreach-program">Outreach Program</a>
-                        </li>
-                    </ul>
-                    <!-- /.list-product-subnav -->
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org/page/bangladesh"
-                        class="list-product-cat">Bangladesh<i class="awesome fa fa-chevron-down pull-right"
-                            aria-hidden="true"></i></a>
-                    <ul class="list list-unstyled list-product-subnav">
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/history">History</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/emergence-of-bangladesh">Emergence of
-                                Bangladesh</a></li>
-                        <li><a
-                                href="https://www.liberationwarmuseumbd.org/page/evolution-of-fundamental-principles-of-1972">Evolution
-                                of fundamental Principles of 1972</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/bengalis-and-bengal">Bengalis and
-                                Bengal</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/concert-for-bangladesh">Concert for
-                                Bangladesh</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/sector-commanders">Sector Commanders</a>
-                        </li>
-                    </ul>
-                    <!-- /.list-product-subnav -->
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org" class="list-product-cat">Activities <i
-                            class="awesome fa fa-chevron-down pull-right" aria-hidden="true"></i> </a>
-                    <ul class="list list-unstyled list-product-subnav">
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/programs">Programs's</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/press-release">Press Release</a></li>
-                        <div class="menu-wrap">
-                            <ul class="menu">
-                                <li class="menu-item">
-                                    <!--<a href="https://www.liberationwarmuseumbd.org">The Center <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
-                                    <a href="#">The Center <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul class="drop-menu">
-                                        <li class="drop-menu-item">
-                                            <a href="https://www.liberationwarmuseumbd.org/page/about-csgj"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> About CSGJ</a>
-                                        </li>
-                                        <!--<li class="drop-menu-item">-->
-                                        <!--    <a href="https://www.liberationwarmuseumbd.org/page"><i class="fa fa-angle-right" aria-hidden="true"></i> Activism</a>-->
-                                        <!--</li>-->
-                                        <li class="drop-menu-item">
-                                            <a href="https://www.liberationwarmuseumbd.org/page/seminars"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> Seminar &
-                                                Webinar</a>
-                                        </li>
-                                        <!--<li class="drop-menu-item">-->
-                                        <!--    <a href="https://www.liberationwarmuseumbd.org/page"><i class="fa fa-angle-right" aria-hidden="true"></i> Workshop & Training</a>-->
-                                        <!--</li>-->
-                                        <li class="drop-menu-item">
-                                            <a
-                                                href="https://www.liberationwarmuseumbd.org/page/research-and-publications"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> Research and
-                                                Publications</a>
-                                        </li>
-                                        <li class="drop-menu-item">
-                                            <a href="https://www.liberationwarmuseumbd.org/page/certificate-course"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> Certificate
-                                                Course</a>
-                                        </li>
-                                        <li class="drop-menu-item">
-                                            <a href="https://www.liberationwarmuseumbd.org/page/winter-school"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> Winter School</a>
-                                        </li>
-                                        <li class="drop-menu-item">
-                                            <a
-                                                href="https://www.liberationwarmuseumbd.org/page/volunteer-exchange-programs"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> Volunteer Exchange
-                                                Programs</a>
-                                        </li>
-                                        <li class="drop-menu-item">
-                                            <a href="https://www.liberationwarmuseumbd.org/page/volunteering-at-csgj"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> Volunteering at
-                                                CSGJ</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/recent-and-upcoming-activities">Recent &
-                                Upcoming Activities</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/international-conferences">International
-                                Conferences</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/exhibition">Exhibition</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/advertisement">Advertisement</a></li>
-                    </ul>
-                    <!-- /.list-product-subnav -->
-                </li>
-                <li><a href="https://www.liberationwarmuseumbd.org/page/annual-reports" class="menu-excep">Annual
-                        Performence Agreement (APA)</a></li>
-                <li><a href="http://library.liberationwarmuseumbd.org/" class="menu-excep">Library</a></li>
-                <li> <a href="#" class="list-product-cat"> Sultana's Dream<i
-                            class="awesome fa fa-chevron-down pull-right" aria-hidden="true"></i> </a>
-                    <ul class="list list-unstyled list-product-subnav">
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/sultanas-dream-audio-book">Sultana’s
-                                Dream - Audio Book</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/sultanar-swapno-srutigrontho">সুলতানার
-                                স্বপ্ন - শ্রতিগ্রন্থ</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/public/images/818062.pdf">Sultana’s Dream -
-                                eBook</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/public/images/777866.pdf">সুলতানার স্বপ্ন -
-                                ই-বুক</a></li>
-                    </ul>
-                    <!-- /.list-product-subnav -->
-                </li>
-                <!--<li> <a href="https://www.liberationwarmuseumbd.org" class="list-product-cat"> Archive<i class="awesome fa fa-chevron-down pull-right" aria-hidden="true"></i> </a>-->
-                <li> <a href="#" class="list-product-cat"> Archive<i class="awesome fa fa-chevron-down pull-right"
-                            aria-hidden="true"></i> </a>
-                    <ul class="list list-unstyled list-product-subnav">
-                        <!--<li><a href="https://www.liberationwarmuseumbd.org/page">Today'71</a></li>-->
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/documents">Documents</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/collection">Collection</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/oral-history">Oral History</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/audio-visual-archive">Audio Visual
-                                Archive</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/photo-archive">Photo Archive</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/archive-donors">Archive Donors</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/audit-reports">Audit Reports</a></li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/struggle-of-bangladesh-pictorial">Struggle
-                                of Bangladesh: Pictorial</a></li>
-                    </ul>
-                    <!-- /.list-product-subnav -->
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org" class="list-product-cat">Donor<i
-                            class="awesome fa fa-chevron-down pull-right" aria-hidden="true"></i> </a>
-                    <ul class="list list-unstyled list-product-subnav">
-                        <li><a href="https://www.liberationwarmuseumbd.org/donation">Make a Donation</a></li>
-                        <!--<li><a href="https://www.liberationwarmuseumbd.org/flwmb/">FLWMB</a></li>-->
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/object-donor-list">Object Donor List</a>
-                        </li>
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/fund-collection-leaflet">Fund Collection
-                                Leaflet</a></li>
-                        <div class="menu-wrap">
-                            <ul class="menu">
-                                <li class="menu-item">
-                                    <!--<a href="https://www.liberationwarmuseumbd.org">Fund Raising Campaign <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
-                                    <a href="#">Fund Raising Campaign <i class="fa fa-angle-down"
-                                            aria-hidden="true"></i></a>
-                                    <ul class="drop-menu">
-                                        <li class="drop-menu-item">
-                                            <a href="https://www.liberationwarmuseumbd.org/page/tv-commercials"><i
-                                                    class="fa fa-angle-right" aria-hidden="true"></i> TV Commercials</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <li><a href="https://www.liberationwarmuseumbd.org/page/audit-reports">Audit Reports</a></li>
-                    </ul>
-                    <!-- /.list-product-subnav -->
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org/flwmb/" class="menu-excep">FLWMB</a>
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org/page/contact-us" class="menu-excep">Contact Us</a>
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org/page/newsletter" class="menu-excep">Newsletter</a>
-                </li>
-                <li> <a href="https://www.liberationwarmuseumbd.org/page/upcoming-events" class="menu-excep">Upcoming
-                        Events</a>
-                </li>
-
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#collections" class="nav-link">Collections</a></li>
+                <li class="nav-item"><a href="index.html#exhibitions" class="nav-link">Exhibitions</a></li>
+                <li class="nav-item"><a href="index.html#archive" class="nav-link">Archive</a></li>
+                <li class="nav-item"><a href="virtual.html" class="nav-link active">Virtual Tour</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
-        <!-- Demo -->
-
-        <!-- Begin of logo/brand -->
-        <a class="navbar-brand" href="https://www.liberationwarmuseumbd.org">
-            <span class="logo">
-                <img class="light-logo" src="https://www.liberationwarmuseumbd.org/front/lwm/img/large-logo.png"
-                    alt="Logo">
-            </span>
-        </a>
-
-
-        <div class="all-menu-wrapper" id="navbarMenu">
-            <!-- Begin of top menu -->
-            <nav class="navbar-topmenu">
-            </nav>
-            <!-- End of top menu -->
-            <!-- new menu starts -->
-            <nav>
-                <nav role='navigation' class='animated bounceInDown'>
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                        <ul id="menu">
-                            <div class="custom-cls">
-                                <ul>
-                                    <li><a href='#profile'>Home</a></li>
-                                    <li class='sub-menu'><a href='#message'>About Museum<div
-                                                class='fa fa-caret-down right'></div></a>
-                                        <ul>
-                                            <li><a href='#settings'>Founder Board of Trustees</a></li>
-                                            <li><a href='#settings'>About Us</a></li>
-                                            <li><a href='#settings'>Mission Statement</a></li>
-                                            <li><a href='#settings'>Accreditation & Affiliations</a></li>
-                                            <li><a href='#settings'>Early Initiatives</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class='sub-menu'><a href='#settings'>Bangladesh<div
-                                                class='fa fa-caret-down right'></div></a>
-                                        <ul>
-                                            <li><a href='#settings'>History</a></li>
-                                            <li><a href='#settings'>Emergence of Bangladesh</a></li>
-                                            <li><a href='#settings'>Evolution of fundamental Principles of 1972</a></li>
-                                            <li><a href='#settings'>Bengalis and Bengal</a></li>
-                                            <li><a href='#settings'>Concert for Bangladesh</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class='sub-menu'><a href='#message'>Activities<div
-                                                class='fa fa-caret-down right'></div></a>
-                                        <ul>
-                                            <li><a href='#settings'>Programs's</a></li>
-                                            <li><a href='#settings'>Press Release</a></li>
-                                            <li class='sub-menu'><a href='#settings'>The Center<div
-                                                        class='fa fa-caret-down right'></div></a>
-                                                <ul>
-                                                    <li><a href='#settings'>About CSGJ</a></li>
-                                                    <li><a href='#settings'>Activism</a></li>
-                                                    <li><a href='#settings'>Seminar & Webinar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href='#settings'>Recent & Upcoming Activities</a></li>
-                                            <li><a href='#settings'>International Conferences</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="sub-menu"><a href='#message'>Archive<div class='fa fa-caret-down right'>
-                                            </div></a>
-                                        <ul>
-                                            <li><a href='#message'>Today'71</a></li>
-                                            <li><a href='#message'>Documents</a></li>
-                                            <li><a href='#message'>Collection</a></li>
-                                            <li><a href='#message'>Oral History</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-menu"><a href='#message'>Donor<div class='fa fa-caret-down right'>
-                                            </div></a>
-                                        <ul>
-                                            <li><a href='#message'>Make a Donation</a></li>
-                                            <li><a href='#message'>Object Donor List</a></li>
-                                            <li><a href='#message'>Fund Collection Leaflet</a></li>
-                                            <li class="sub-menu"><a href='#message'>Fun Raising Campaign<div
-                                                        class='fa fa-caret-down right'>
-                                                    </div>
-                                                </a>
-                                                <ul>
-                                                    <li><a href='#message'>TV Commercials</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href='#message'>Annual Reports</a></li>
-                                            <li><a href='#message'>Audit Reports</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href='#message'>Contact Us</a></li>
-                                    <li><a href='#message'>Newsletter</a></li>
-                                    <li><a href='#message'>Upcoming Events</a></li>
-                                </ul>
-                            </div>
-
-                        </ul>
-                    </div>
-                </nav>
-            </nav>
-            <!-- new menu ends -->
-        </div>
-    </header>
-    <!-- END OF site header Menu-->
-
-
-    <!-- Cover page carousel Starts -->
-    <div class="page-cover" id="parallax-cover">
-        <!-- Cover Background -->
-        <div data-depth="0.2" class="cover-bg bg-img"
-            data-image-src="https://www.liberationwarmuseumbd.org/front/lwm/img/bg-default.jpg"></div>
-
-        <!-- Transluscent mask as filter -->
-        <!-- <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7) data-bgcolor="#434241a6""></div> -->
-        <div class="cover-bg-mask bg-color"
-            style="background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0.5805672610841212) 7%, rgba(131,125,125,0.7514356084230567) 34%, rgba(135,130,130,0.8130602582830007) 59%);">
-        </div>
-
-
-    </div>
-
-    <main class="page-main page-fullpage main-anim" id="mainpage">
-
-        <!-- Begin of home section -->
-        <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
-            data-section="home">
-            <!-- Begin of section wrapper -->
-            <div class="section-wrapper fullwidth with-margin v-center">
-                <!-- content -->
-                <div class="section-content anim">
-                    <div class="container-fluid inner-page">
-                        <div class="container">
-
-
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 ip-left-title">
-                                    <p>Virtual Tour</p>
-                                    <!--<hr>-->
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="ip-top-right text-end">
-                                        <p><a href="https://www.liberationwarmuseumbd.org">Home</a></p>
-                                        <p> <i class="fa fa-angle-right"></i> </p>
-                                        <p>Virtual Tour</p>
-                                    </div>
-                                    <!--<hr>-->
-                                </div>
-                            </div>
-
-                            <!-- <div class="col-sm-12">
-                            <div class="block-title">
-                                <h2 class="display-4 display-title text-center text-white anim-2 ip-title">Virtual Tour</h2>
-                            </div>
-                        </div> -->
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="content ip-big-card">
-                                        <h2 class="bodyHeading">Virtual Tour</h2>
-                                        <style> </style>
-                                        <p style="color: #000 !important;">Video Guideline for Virtual Tour of Museum
-                                        </p>
-                                        <p><iframe
-                                                title="Virtual Liberation War Museum Tour Guide Instruction | Tutorial"
-                                                src="https://www.youtube.com/embed/ydYWL3fE-4E" width="100%"
-                                                height="600px" frameborder="0"
-                                                allowfullscreen="allowfullscreen"></iframe></p>
-                                        <p style="color: #000 !important;">Image Guideline for Virtual Tour of Museum
-                                        </p>
-                                        <p><img src="https://www.liberationwarmuseumbd.org/public/images/216299.png"
-                                                alt="" width="300" height="290" /> &nbsp;&nbsp;&nbsp; <img
-                                                src="https://www.liberationwarmuseumbd.org/public/images/302655.png"
-                                                alt="" width="300" height="250" /></p>
-                                        <p><iframe style="width: 100%; height: 750px;"
-                                                src="https://my.matterport.com/show/?m=EYV8s8TLiwt" width="100%"
-                                                height="750px" frameborder="0"
-                                                allowfullscreen="allowfullscreen"></iframe></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="container">
-                            <div class="row images">
-                            </div>
-                        </div>
-
-                        <!--footer-->
-
-                        <div class="container-fluid">
-                            <!-- style="margin-top:170px; margin-bottom: 0 !important; padding-bottom: 0 !important;" -->
-                            <div class="row last-section">
-                                <div class="col-lg-5 col-md-12">
-                                    <p class="f-left">© 2025 Liberation War Museum, All rights reserved</p>
-                                </div>
-
-
-                                <div class="col-lg-3 col-md-12">
-                                    <div class="icons icons-margin">
-                                        <a class="" href="https://www.facebook.com/liberationwarmuseum.official">
-                                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="" href="https://www.instagram.com/liberationwarmuseum.official/">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="" href="https://twitter.com/lwmbangladesh">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="" href="https://www.linkedin.com/company/lwmbangladesh">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="" href="https://vimeo.com/liberationwarmuseum">
-                                            <i class="fa fa-vimeo" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="" href="https://www.youtube.com/liberationwarmuseum">
-                                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 col-md-12">
-                                    <p class="f-left">Powered by - <span><img
-                                                src="https://www.liberationwarmuseumbd.org/front/lwm/img/aamra-logo-b.png"
-                                                alt="" width="200px"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Arrows scroll down/up -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-
-            <!-- End of section wrapper -->
-
         </div>
-        <!-- End of home section -->
+    </nav>
 
-
-        <!-- Float Nav Starts Here -->
-        <!--
-<div class="float-nav">
-  <a href="#" class="menu-btn">
-    <ul>
-      <li class="line"></li>
-      <li class="line"></li>
-      <li class="line"></li>
-    </ul>
-    <div class="menu-txt">menu</div>
-  </a>
-</div>
-
-<div class="main-nav">
-  <ul>
-    <li><a href="#">Today'71</a></li>
-    <li><a href="#">International Conferences</a></li>
-    <li><a href="#">Bangladesh Genocide</a></li>
-    <li><a href="#">Documents</a></li>
-    <li><a href="#">Oral History</a></li>
-    <li><a href="#">Audio Visual Archive</a></li>
-  </ul>
-</div>-->
-        <!-- Float Nav Ends Here -->
-        <!-- lightbox image (visually hidden) -->
-
-
-        <div id="image-viewer">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="full-image">
+    <!-- Virtual Tour Hero -->
+    <section class="virtual-hero">
+        <div class="container">
+            <div class="virtual-hero-content">
+                <h1 class="virtual-title">Virtual Museum Tour</h1>
+                <p class="virtual-subtitle">Experience our museum from anywhere in the world. Navigate through our galleries, examine artifacts up close, and discover the stories behind our collections in this immersive 3D environment.</p>
+                <div class="tour-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🏛️</span>
+                        <span class="feature-text">Full Gallery Access</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🔍</span>
+                        <span class="feature-text">Interactive Exploration</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📱</span>
+                        <span class="feature-text">Mobile Compatible</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <!-- Virtual Tour Container -->
+    <section class="virtual-tour-section">
+        <div class="container">
+            <div class="tour-container">
+                <div class="tour-header">
+                    <h2>Immersive 3D Experience</h2>
+                    <p>Use your mouse or touch to navigate through the museum. Click on information points to learn more about specific artifacts and exhibitions.</p>
+                </div>
+                
+                <div class="tour-viewer">
+                    <div class="viewer-frame">
+                        <iframe style="width: 100%; height: 750px;" 
+                                src="https://my.matterport.com/show/?m=EYV8s8TLiwt" 
+                                width="100%" 
+                                height="750px" 
+                                frameborder="0" 
+                                allowfullscreen="allowfullscreen">
+                        </iframe>
+                    </div>
+                    
+                    <div class="tour-controls">
+                        <div class="control-item">
+                            <button class="control-button" id="fullscreenBtn">
+                                <span class="control-icon">⛶</span>
+                                <span class="control-label">Fullscreen</span>
+                            </button>
+                        </div>
+                        <div class="control-item">
+                            <button class="control-button" id="helpBtn">
+                                <span class="control-icon">❓</span>
+                                <span class="control-label">Help</span>
+                            </button>
+                        </div>
+                        <div class="control-item">
+                            <button class="control-button" id="shareBtn">
+                                <span class="control-icon">📤</span>
+                                <span class="control-label">Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- Tour Guide Section -->
+    <section class="tour-guide">
+        <div class="container">
+            <h2 class="section-title">How to Navigate</h2>
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <div class="guide-icon">🖱️</div>
+                    <h3>Mouse Controls</h3>
+                    <ul class="guide-list">
+                        <li>Click and drag to look around</li>
+                        <li>Scroll to zoom in and out</li>
+                        <li>Click on floor arrows to move</li>
+                        <li>Double-click to move to a location</li>
+                    </ul>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-icon">📱</div>
+                    <h3>Touch Controls</h3>
+                    <ul class="guide-list">
+                        <li>Swipe to look around</li>
+                        <li>Pinch to zoom in and out</li>
+                        <li>Tap on floor arrows to move</li>
+                        <li>Double-tap to move to a location</li>
+                    </ul>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-icon">ℹ️</div>
+                    <h3>Information Points</h3>
+                    <ul class="guide-list">
+                        <li>Look for interactive hotspots</li>
+                        <li>Click to view artifact details</li>
+                        <li>Access audio descriptions</li>
+                        <li>View high-resolution images</li>
+                    </ul>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-icon">🎯</div>
+                    <h3>Navigation Tips</h3>
+                    <ul class="guide-list">
+                        <li>Use the dollhouse view for overview</li>
+                        <li>Switch between floor plans</li>
+                        <li>Bookmark favorite locations</li>
+                        <li>Share specific viewpoints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Featured Highlights -->
+    <section class="tour-highlights">
+        <div class="container">
+            <h2 class="section-title">Tour Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="image-placeholder highlight-placeholder">
+                        <span class="placeholder-text">Gallery Entrance</span>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>[Gallery Name]</h3>
+                        <p class="highlight-description">[Description of what visitors will find in this gallery section]</p>
+                        <button class="highlight-btn">Visit in Tour</button>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="image-placeholder highlight-placeholder">
+                        <span class="placeholder-text">Featured Exhibition</span>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>[Exhibition Name]</h3>
+                        <p class="highlight-description">[Description of the featured exhibition and its significance]</p>
+                        <button class="highlight-btn">Visit in Tour</button>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="image-placeholder highlight-placeholder">
+                        <span class="placeholder-text">Special Collection</span>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>[Collection Name]</h3>
+                        <p class="highlight-description">[Description of special collection and notable artifacts]</p>
+                        <button class="highlight-btn">Visit in Tour</button>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="image-placeholder highlight-placeholder">
+                        <span class="placeholder-text">Interactive Zone</span>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>[Interactive Area]</h3>
+                        <p class="highlight-description">[Description of interactive features and educational content]</p>
+                        <button class="highlight-btn">Visit in Tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--    <footer>-->
-    <!--  <div class="container-fluid">-->
-    <!--    <div class="row last-section">-->
-    <!--      <div class="col-sm-4">-->
-    <!--        <p class="f-left">©️ 2022 Liberation War Museum, All rights reserved</p>-->
-    <!--      </div>-->
-    <!--      <div class="col-sm-5"></div>-->
-    <!--      <div class="col-sm-3">-->
-    <!--        <a class="f-right" href="https://aamrainfotainment.com/">-->
-    <!--          <p><em>Powered by - </em><img src="https://www.liberationwarmuseumbd.org/front/lwm/img/aamra-logo-b.png" alt=""></p>-->
-    <!--        </a>-->
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--</footer>-->
-    <!-- END OF site footer -->
-    <!-- scripts -->
-
-    <!--for image big screen -->
-    <div id="image-viewer">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="full-image">
+    <!-- Help Modal -->
+    <div class="help-modal" id="helpModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content help-content">
+            <div class="modal-header">
+                <h3>Virtual Tour Help</h3>
+                <button class="modal-close" id="closeHelpModal">✕</button>
+            </div>
+            <div class="help-body">
+                <div class="help-section">
+                    <h4>Getting Started</h4>
+                    <p>Welcome to our virtual museum tour! This immersive experience allows you to explore our galleries as if you were physically present.</p>
+                </div>
+                
+                <div class="help-section">
+                    <h4>Navigation Controls</h4>
+                    <div class="help-controls">
+                        <div class="help-control-item">
+                            <strong>Move:</strong> Click on floor arrows or double-click on the floor
+                        </div>
+                        <div class="help-control-item">
+                            <strong>Look Around:</strong> Click and drag to change your view
+                        </div>
+                        <div class="help-control-item">
+                            <strong>Zoom:</strong> Use mouse wheel or pinch gesture
+                        </div>
+                        <div class="help-control-item">
+                            <strong>Information:</strong> Click on circular info points for details
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="help-section">
+                    <h4>Special Features</h4>
+                    <ul class="help-features">
+                        <li>Dollhouse view for complete floor plan overview</li>
+                        <li>Floor plan navigation for quick room switching</li>
+                        <li>High-resolution artifact viewing</li>
+                        <li>Audio descriptions and detailed information</li>
+                    </ul>
+                </div>
+                
+                <div class="help-section">
+                    <h4>Technical Requirements</h4>
+                    <p>For the best experience, we recommend using a modern web browser with WebGL support. The tour works on desktop, tablet, and mobile devices.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- All Javascript plugins goes here -->
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/jquery-1.12.4.min.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/bootstrap.min.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/slick/slick.min.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/owl.carousel.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Digital Museum</h4>
+                    <p>[Museum description and mission statement will be added here]</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#collections">Collections</a></li>
+                        <li><a href="index.html#exhibitions">Exhibitions</a></li>
+                        <li><a href="index.html#archive">Archive</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Contact</h5>
+                    <p>Email: [contact@digitalmuseum.org]</p>
+                    <p>Phone: [+1 (555) 123-4567]</p>
+                    <p>Address: [Museum Address]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Digital Museum Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-    <!-- All vendor scripts -->
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/vendor/parallax.min.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/vendor/scrolloverflow.min.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/vendor/all.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/particlejs/particles.min.js"></script>
-
-    <!-- Countdown script -->
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/jquery.downCount.js"></script>
-
-    <!-- Form script -->
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/form_script.js"></script>
-
-    <!-- Javascript main files -->
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/main.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://www.liberationwarmuseumbd.org/front/lwm/js/script.js"></script>
-
-    <script>
-        const html = document.querySelector('html');
-        html.classList.remove('canvas', 'canvastext', 'js', 'flexbox', 'webgl', 'no-touch',
-            'geolocation', 'postmessage', 'websqldatabase', 'indexeddb', 'hashchange', 'history', 'draganddrop',
-            'websockets', 'rgba', 'hsla', 'multiplebgs', 'backgroundsize', 'borderimage', 'borderradius', 'boxshadow',
-            'textshadow', 'opacity', 'cssanimations', 'csscolumns', 'cssgradients', 'cssreflections', 'csstransforms',
-            'csstransforms3d', 'csstransitions', 'fontface', 'generatedcontent', 'video', 'audio', 'localstorage',
-            'sessionstorage', 'webworkers', 'no-applicationcache', 'svg', 'inlinesvg', 'smil', 'svgclippaths', 'fp-enabled');
-    </script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="components/virtual-tour.js"></script>
 </body>
-
 </html>
